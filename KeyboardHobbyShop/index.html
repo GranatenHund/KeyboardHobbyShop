@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+  body {
+    font-family: Arial; background-image: url('resources/bg.jpg');
+  }
+  .navbar {
+    opacity: 90%;
+    color: #767676;
+    font-size: 20px;
+    text-align: left;
+    background-color: #2d2d2d;
+    overflow: auto;
+    font-family: Brush Script MT;
+    padding-left: 50px;
+  }
+  .content{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+    opacity: 85%;
+    background-color: #767676;
+  }
+  .footer{
+    padding: 10px;
+    opacity: 92%;
+    background-color: #767676;
+  }
+  legend{
+    font-size:30px;
+  }
+  label{
+    padding-left: 30px;
+    font-size: 22px;
+  }
+  input{
+    margin-left: 30px;
+    font-size: 20px;
+  }
+  #b1{
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+  }
+</style>
+</head>
+
+
+<body>
+
+  <div class="navbar">
+    <h1>Keyboard Hobby Shop</h1>
+  </div>
+
+  <div class = "content">
+    <h2>Please Enter Your Order Information: </h2>
+    <form id = "f1" action = "http://localhost:5000/order" method = "POST">
+
+        <fieldset>
+        <legend>Personal Information: </legend>
+        <label>Customer Name: </label><br>
+        <input type="text" name="name"><br>
+        <label>Gender: </label><br>
+        <input type="radio" id="MALE" name="gen" value="MALE">
+        <label for="econo">Male</label><br>
+        <input type="radio" id="FEMALE" name="gen" value="FEMALE">
+        <label for="student">Female</label><br>
+        <input type="radio" id="OTHERS" name="gen" value="OTHERS">
+        <label for="student">Others</label><br>
+        <label>Age: </label><br>
+        <input type="text" name="age" ><br>
+        <label>Address:</label><br>
+        <input type="text" name="address"><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Available Product</legend>
+      <label>Keyboards: </label><br>
+      <input type="checkbox" name="kb1" value="Keychorn K8">
+      <label> Keychorn K8 </label><br>
+      <input type="checkbox" name="kb2" value="Keychorn K2">
+      <label> Keychorn K2 </label><br>
+      <input type="checkbox" name="kb3" value="Logitech G Pro">
+      <label> Logitech G Pro </label><br><br>
+			<label>Enter Quantity:</label>
+			<input type = "number" name ="quan" /><br>
+     </fieldset>
+
+       <div id="b1">
+        <button style = "background-color: #2d2d2d; padding: 15px; color: white;" type="submit" value = "Submit"  >Submit</button> 
+       </div>
+    </form>
+       <!--BG Music-->
+  </div>
+
+      <!--Footer-->
+  <div class = "footer">
+    <p style="font-size: 20px;">For any inquiries, you may contact the following: </p>
+    <p>Telephone Number: 044-156778 </p>
+    <p>Mobile: 09237689567 </p>
+    <p>Email: KeyboardHobby@email.com</p>
+
+    <!--BG Music-->    
+    <audio controls autoplay loop>
+      <source src="resources/music(1).mp3">
+        Your browser does not support the audio element.
+    </audio> 
+
+  </div>  
+</body>
+</html>
