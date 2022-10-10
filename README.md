@@ -4,6 +4,8 @@ Vincent Santaygillo
 
 Make sure yo have flask installed in your Python Environment.
 
+This is a basic template for a web shop.
+
 Steps:
 
     -Download the entire folder, you can put it anywhere in your Pc as long as it is in Local Disk(C:).
